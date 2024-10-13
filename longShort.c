@@ -4,9 +4,9 @@
 #include <string.h>
 
 int main(int argc, char *argv[]){
-    //checkin that user supplys 2 arguments
-    if(argc < 3){
-        printf("Please supply 2 arguments.");
+    //checkin that user supplys 3 arguments
+    if(argc < 4){
+        printf("Please supply 3 arguments.");
         exit(1);
     }
     //open first file 
