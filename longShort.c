@@ -41,9 +41,7 @@ int main(int argc, char *argv[]){
     int countforLong = 0;
     int countforShort = 0;
     
-    while ( !feof(file1) ){
-        
-        fgets(line,1000,file1);
+    while ( fgets(line,1000,file1) != NULL ){
 
         if (strlen(&line[i]) > 20){
             for (int i = 0; line[i] != '\n' /*&& line[i] != '\0'*/; i++){
